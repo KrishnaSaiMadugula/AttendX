@@ -1,0 +1,2082 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.firebase/
+  hosting.ZGlzdA.cache
+public/
+  favicon.svg
+  icons.svg
+src/
+  assets/
+    styles/
+      main.css
+  components/
+    teacher/
+      Sidebar.jsx
+  context/
+    TeacherAuthContext.jsx
+  layouts/
+    StudentLayout.jsx
+    TeacherLayout.jsx
+  pages/
+    student/
+      ScanAttendance.jsx
+    teacher/
+      Dashboard.jsx
+      LiveQR.jsx
+      Login.jsx
+      Previous.jsx
+      Settings.jsx
+  services/
+    authService.js
+    dbService.js
+    firebase.js
+    qrService.js
+  utils/
+    csv.js
+    fingerprint.js
+    geo.js
+  App.jsx
+  main.jsx
+.firebaserc
+.gitignore
+eslint.config.js
+firebase.json
+index.html
+package.json
+README.md
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".firebase/hosting.ZGlzdA.cache">
+icons.svg,1785673040251,a71fc7c82918feffdb1e7e59f1b494531849b1025cedc75bc6c0dfa2a941d54d
+favicon.svg,1785673040230,44fea64ea0b4986cf22dbc28741fe402f021baf13dbd2cc8ce6aa04b24300573
+index.html,1785809905215,cb9aecf29bb911c46fece154399659fe605361003c90c01984e9d9ea3b31fca4
+assets/index-C5uovyCq.css,1785809905215,d41f56ceed8d35cd871f517931fd3b6825e0effbfce7cb8bbe705ed8ee5fec8f
+assets/index-CwV0eV5s.js,1785809905214,db36b39e39f5dce2a522e8289d829b23f8c91bf9edf82b7ac273db79ea473c37
+</file>
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="src/assets/styles/main.css">
+/* Modern CSS Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input:focus, button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+</file>
+
+<file path="src/components/teacher/Sidebar.jsx">
+import React from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { LayoutDashboard, QrCode, Settings, History, LogOut } from 'lucide-react';
+import { logoutUser } from '../../services/authService';
+import { useTeacherAuth } from '../../context/TeacherAuthContext';
+
+const Sidebar = () => {
+  const navigate = useNavigate();
+  const { user } = useTeacherAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logoutUser();
+      navigate('/login');
+    } catch (error) {
+      console.error("Logout failed", error);
+    }
+  };
+
+  // Function to dynamically style active vs inactive links
+  const navStyle = ({ isActive }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    padding: '0.75rem 1rem',
+    borderRadius: '8px',
+    color: isActive ? '#2563eb' : '#4b5563', // Blue if active, Gray if inactive
+    backgroundColor: isActive ? '#eff6ff' : 'transparent',
+    fontWeight: isActive ? '600' : '400',
+    transition: 'all 0.2s',
+    marginBottom: '0.5rem'
+  });
+
+  return (
+    <aside style={{
+      width: '260px',
+      backgroundColor: '#ffffff',
+      borderRight: '1px solid #e5e7eb',
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '1.5rem 1rem'
+    }}>
+      {/* Logo / Header */}
+      <div style={{ padding: '0 1rem', marginBottom: '2rem' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827' }}>AttendX</h2>
+        <p style={{ fontSize: '0.75rem', color: '#6b7280' }}>Teacher Portal</p>
+      </div>
+
+      {/* Navigation Links */}
+      <nav style={{ flexGrow: 1 }}>
+        <NavLink to="/" style={navStyle} end>
+          <LayoutDashboard size={20} /> Dashboard
+        </NavLink>
+        <NavLink to="/attendance" style={navStyle}>
+          <QrCode size={20} /> Live QR
+        </NavLink>
+        <NavLink to="/previous" style={navStyle}>
+          <History size={20} /> History
+        </NavLink>
+        <NavLink to="/settings" style={navStyle}>
+          <Settings size={20} /> Settings
+        </NavLink>
+      </nav>
+
+      {/* User Info & Logout Button */}
+      <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: '1.5rem', paddingLeft: '1rem', paddingRight: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+          {user?.photoURL ? (
+            <img src={user.photoURL} alt="Profile" style={{ width: '32px', height: '32px', borderRadius: '50%' }} />
+          ) : (
+            <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#d1d5db' }} />
+          )}
+          <div style={{ overflow: 'hidden' }}>
+            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#111827', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+              {user?.displayName || 'Teacher'}
+            </p>
+          </div>
+        </div>
+        
+        <button 
+          onClick={handleLogout}
+          style={{
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            padding: '0.5rem',
+            color: '#ef4444',
+            fontSize: '0.875rem',
+            fontWeight: '500',
+            borderRadius: '6px',
+            transition: 'background-color 0.2s'
+          }}
+          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#fef2f2'}
+          onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+        >
+          <LogOut size={18} /> Logout
+        </button>
+      </div>
+    </aside>
+  );
+};
+
+export default Sidebar;
+</file>
+
+<file path="src/context/TeacherAuthContext.jsx">
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { auth } from '../services/firebase';
+import { onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, updateProfile } from 'firebase/auth';
+
+const TeacherAuthContext = createContext();
+
+const ALLOWED_TEACHER_EMAILS = [
+  "boomboomshakalaka6969@gmail.com",
+  "krishnasaimadugula89@gmail.com"
+];
+
+export const TeacherAuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoading(false);
+    });
+    return unsubscribe;
+  }, []);
+
+  const login = async () => {
+    const provider = new GoogleAuthProvider();
+    const result = await signInWithPopup(auth, provider);
+    const email = result.user.email;
+
+    const isAllowed = ALLOWED_TEACHER_EMAILS.includes(email) || email.endsWith('@vrsec.ac.in');
+    
+    if (!isAllowed) {
+      await signOut(auth);
+      throw new Error("Access Denied: You must use an authorized teacher email.");
+    }
+  };
+
+  const logout = () => signOut(auth);
+
+  // NEW: Manual name update function
+  const updateTeacherName = async (newName) => {
+    if (auth.currentUser) {
+      // 1. Update securely in Firebase backend
+      await updateProfile(auth.currentUser, { displayName: newName });
+      // 2. Instantly update the screen without needing a refresh
+      setUser({ ...auth.currentUser, displayName: newName });
+    }
+  };
+
+  if (loading) {
+    return null;
+  }
+
+  return (
+    <TeacherAuthContext.Provider value={{ user, login, logout, updateTeacherName }}>
+      {children}
+    </TeacherAuthContext.Provider>
+  );
+};
+
+export const useTeacherAuth = () => useContext(TeacherAuthContext);
+</file>
+
+<file path="src/layouts/StudentLayout.jsx">
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+
+/**
+ * Public layout for students.
+ * Absolutely no authentication checks exist here.
+ * Designed purely as a mobile-first canvas container.
+ */
+const StudentLayout = () => {
+  return (
+    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+      {/* The child page (like /scan) will be injected here into the Outlet */}
+      <Outlet />
+    </div>
+  );
+};
+
+export default StudentLayout;
+</file>
+
+<file path="src/layouts/TeacherLayout.jsx">
+import React from 'react';
+import { Navigate, Outlet } from 'react-router-dom';
+import { useTeacherAuth } from '../context/TeacherAuthContext';
+import Sidebar from '../components/teacher/Sidebar';
+
+const TeacherLayout = () => {
+  const { user } = useTeacherAuth();
+
+  // AUTH GUARD: If no user is detected, kick them to the login page
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return (
+    <div style={{ display: 'flex', height: '100vh', backgroundColor: '#f3f4f6', overflow: 'hidden' }}>
+      
+      {/* Our newly created Sidebar goes here */}
+      <Sidebar />
+      
+      {/* The main content area where pages will load */}
+      <main style={{ flexGrow: 1, padding: '2rem', overflowY: 'auto' }}>
+        <Outlet />
+      </main>
+      
+    </div>
+  );
+};
+
+export default TeacherLayout;
+</file>
+
+<file path="src/pages/student/ScanAttendance.jsx">
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { MapPin, ShieldCheck, AlertOctagon, CheckCircle2, Loader, Fingerprint, LogIn } from 'lucide-react';
+import { getSessionById, submitAttendanceRecordTransaction } from '../../services/dbService';
+import { calculateDistance } from '../../utils/geo';
+import { generateDeviceFingerprint } from '../../utils/fingerprint';
+import { signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../../services/firebase';
+
+const ALLOWED_STUDENT_TEST_EMAILS = [
+  "boomboomshakalaka6969@gmail.com",
+  "krishnasaimadugula89@gmail.com"
+];
+
+const ScanAttendance = () => {
+  const [searchParams] = useSearchParams();
+  const sessionId = searchParams.get('session');
+  const token = searchParams.get('token');
+
+  const [step, setStep] = useState('validating');
+  const [errorMsg, setErrorMsg] = useState('');
+  const [sessionData, setSessionData] = useState(null);
+  const [studentUser, setStudentUser] = useState(null);
+  const [studentLoc, setStudentLoc] = useState(null);
+  const [formData, setFormData] = useState({ rollNumber: '', answer: '' });
+  const [submitting, setSubmitting] = useState(false);
+
+  // 1. Validate Session & Listen for Auth state persistence (Prevents mobile reload loops)
+  useEffect(() => {
+    let isMounted = true;
+
+    const initializeScan = async () => {
+      try {
+        if (!sessionId || !token) throw new Error("Invalid QR Code structure.");
+        const session = await getSessionById(sessionId);
+        if (!session) throw new Error("Attendance session not found.");
+        if (session.status !== 'OPEN') throw new Error("This attendance session has been closed.");
+        
+        if (session.currentToken !== token) {
+          throw new Error("This QR code has expired. Please scan the newest one on the board.");
+        }
+        
+        if (session.expiresAt && session.expiresAt.toMillis() < Date.now()) {
+          throw new Error("The time limit for this attendance session has expired.");
+        }
+
+        if (isMounted) {
+          setSessionData(session);
+        }
+      } catch (err) {
+        if (isMounted) {
+          setErrorMsg(err.message);
+          setStep('error');
+        }
+      }
+    };
+
+    initializeScan();
+
+    // Listen to Firebase Auth state to handle mobile redirects/reloads seamlessly
+    const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
+      if (!isMounted) return;
+      
+      if (user) {
+        const email = user.email;
+        const isAllowed = ALLOWED_STUDENT_TEST_EMAILS.includes(email) || email.endsWith('@vrsec.ac.in');
+        
+        if (isAllowed) {
+          setStudentUser(user);
+          // Only auto-advance if we were waiting for auth or validating
+          setStep((prev) => (prev === 'validating' || prev === 'student_auth' ? 'location' : prev));
+        } else {
+          signOut(auth);
+          setErrorMsg("Access Denied: Please sign in with your official college mail ('@vrsec.ac.in').");
+          setStep('error');
+        }
+      } else {
+        // If not logged in and session is ready, prompt for student auth
+        setStep((prev) => (prev === 'validating' ? 'student_auth' : prev));
+      }
+    });
+
+    return () => {
+      isMounted = false;
+      unsubscribeAuth();
+    };
+  }, [sessionId, token]);
+
+  const handleStudentLogin = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+      const email = result.user.email;
+
+      const isAllowed = ALLOWED_STUDENT_TEST_EMAILS.includes(email) || email.endsWith('@vrsec.ac.in');
+      if (!isAllowed) {
+        await signOut(auth);
+        throw new Error("Access Denied: Please sign in with your official college mail ('@vrsec.ac.in').");
+      }
+
+      setStudentUser(result.user);
+      setStep('location');
+    } catch (err) {
+      setErrorMsg(err.message || "College email login failed.");
+      setStep('error');
+    }
+  };
+
+  const requestLocation = () => {
+    if (!navigator.geolocation) {
+      setErrorMsg("Geolocation is not supported by your browser.");
+      setStep('error');
+      return;
+    }
+
+    setStep('locating_loader');
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        const teacherLat = sessionData.geoConfig.latitude;
+        const teacherLon = sessionData.geoConfig.longitude;
+        const radius = sessionData.geoConfig.radius; 
+
+        const distance = calculateDistance(teacherLat, teacherLon, latitude, longitude);
+
+        if (distance > radius) {
+          setErrorMsg(`Location Exceeded: You are ${Math.round(distance)}m away. Must be within ${radius}m of the classroom.`);
+          setStep('error');
+        } else {
+          setStudentLoc({ latitude, longitude, distance });
+          setStep('form');
+        }
+      },
+      (error) => {
+        setErrorMsg("Precise location access is required. Please turn on Precise Location/GPS on your device.");
+        setStep('error');
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+    );
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setErrorMsg('');
+
+    try {
+      const fingerprint = generateDeviceFingerprint();
+
+      const recordData = {
+        location: studentLoc,
+        studentEmail: studentUser.email,
+        selectedAnswer: formData.answer || 'No Answer',
+        deviceFingerprint: fingerprint,
+        status: 'VERIFIED'
+      };
+
+      await submitAttendanceRecordTransaction(sessionId, formData.rollNumber, recordData);
+      setStep('success');
+    } catch (err) {
+      if (err.message === "ALREADY_SUBMITTED") {
+        setErrorMsg("Attendance has already been recorded for this Roll Number or Device.");
+      } else {
+        setErrorMsg(err.message || "Failed to submit attendance.");
+      }
+      setStep('error');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const renderCard = (children) => (
+    <div style={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', padding: '1rem', backgroundColor: '#f9fafb' }}>
+      <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '16px', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)', width: '100%', maxWidth: '400px', textAlign: 'center' }}>
+        {children}
+      </div>
+    </div>
+  );
+
+  if (step === 'validating') {
+    return renderCard(
+      <>
+        <Loader className="lucide-spin" size={48} color="#3b82f6" style={{ margin: '0 auto 1rem auto' }} />
+        <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>Validating Security Token...</h2>
+      </>
+    );
+  }
+
+  if (step === 'error') {
+    return renderCard(
+      <>
+        <AlertOctagon size={64} color="#ef4444" style={{ margin: '0 auto 1rem auto' }} />
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>Access Denied</h2>
+        <p style={{ color: '#4b5563' }}>{errorMsg}</p>
+      </>
+    );
+  }
+
+  if (step === 'student_auth') {
+    return renderCard(
+      <>
+        <div style={{ backgroundColor: '#eff6ff', padding: '1.5rem', borderRadius: '50%', display: 'inline-block', marginBottom: '1.5rem' }}>
+          <LogIn size={48} color="#3b82f6" />
+        </div>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>College Sign-In</h2>
+        <p style={{ color: '#4b5563', marginBottom: '2rem', fontSize: '0.875rem' }}>
+          Please sign in with your official college email account to mark attendance.
+        </p>
+        <button
+          onClick={handleStudentLogin}
+          style={{ width: '100%', padding: '1rem', backgroundColor: '#2563eb', color: 'white', borderRadius: '8px', fontWeight: 'bold', fontSize: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}
+        >
+          Sign in with Google
+        </button>
+      </>
+    );
+  }
+
+  if (step === 'location' || step === 'locating_loader') {
+    return renderCard(
+      <>
+        <div style={{ backgroundColor: '#eff6ff', padding: '1.5rem', borderRadius: '50%', display: 'inline-block', marginBottom: '1.5rem' }}>
+          <MapPin size={48} color="#3b82f6" />
+        </div>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>GPS Geofence Check</h2>
+        <p style={{ color: '#4b5563', marginBottom: '0.5rem', fontSize: '0.875rem' }}>
+          Signed in as: <strong style={{ color: '#111827' }}>{studentUser?.email}</strong>
+        </p>
+        <p style={{ color: '#4b5563', marginBottom: '2rem', fontSize: '0.875rem' }}>
+          Ensure your device precise location is enabled.
+        </p>
+        <button
+          onClick={requestLocation}
+          disabled={step === 'locating_loader'}
+          style={{ width: '100%', padding: '1rem', backgroundColor: '#2563eb', color: 'white', borderRadius: '8px', fontWeight: 'bold', fontSize: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem' }}
+        >
+          {step === 'locating_loader' ? <><Loader className="lucide-spin" size={20} /> Verifying GPS...</> : 'Share Precise Location'}
+        </button>
+      </>
+    );
+  }
+
+  if (step === 'success') {
+    return renderCard(
+      <>
+        <CheckCircle2 size={64} color="#16a34a" style={{ margin: '0 auto 1rem auto' }} />
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>Attendance Marked!</h2>
+        <p style={{ color: '#4b5563' }}>Recorded for: <strong>{studentUser?.email}</strong></p>
+        <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginTop: '2rem' }}>You may now close this tab.</p>
+      </>
+    );
+  }
+
+  return renderCard(
+    <form onSubmit={handleSubmit} style={{ textAlign: 'left' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#16a34a', marginBottom: '1.5rem', justifyContent: 'center', backgroundColor: '#dcfce3', padding: '0.5rem', borderRadius: '8px', fontSize: '0.875rem', fontWeight: '600' }}>
+        <ShieldCheck size={18} /> Verified ({Math.round(studentLoc.distance)}m away)
+      </div>
+
+      <p style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '1rem' }}>Submitting as: <strong>{studentUser?.email}</strong></p>
+
+      <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.5rem', color: '#374151' }}>Student Roll Number</label>
+      <input
+        required
+        type="text"
+        placeholder="Enter your Roll Number"
+        value={formData.rollNumber}
+        onChange={(e) => setFormData({ ...formData, rollNumber: e.target.value })}
+        style={{ width: '100%', padding: '0.75rem', border: '1px solid #d1d5db', borderRadius: '8px', marginBottom: '1.5rem', fontSize: '1rem', textTransform: 'uppercase' }}
+      />
+
+      <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.5rem', color: '#374151' }}>Security Challenge</label>
+      <p style={{ fontSize: '0.875rem', color: '#4b5563', marginBottom: '1rem' }}>{sessionData.challengeConfig.question}</p>
+      
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+        {['a', 'b', 'c', 'd'].map(opt => (
+          <label key={opt} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem', border: '1px solid #e5e7eb', borderRadius: '8px', cursor: 'pointer', backgroundColor: formData.answer === opt ? '#eff6ff' : 'white' }}>
+            <input 
+              type="radio" 
+              name="answer" 
+              value={opt} 
+              checked={formData.answer === opt}
+              onChange={(e) => setFormData({ ...formData, answer: e.target.value })}
+              style={{ width: '1.25rem', height: '1.25rem' }}
+            />
+            <span style={{ fontSize: '0.875rem', color: '#111827' }}>{sessionData.challengeConfig.options[opt]}</span>
+          </label>
+        ))}
+      </div>
+
+      <button
+        type="submit"
+        disabled={submitting}
+        style={{ width: '100%', padding: '1rem', backgroundColor: '#111827', color: 'white', borderRadius: '8px', fontWeight: 'bold', fontSize: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', opacity: submitting ? 0.7 : 1 }}
+      >
+        {submitting ? <Loader className="lucide-spin" size={20} /> : <Fingerprint size={20} />}
+        {submitting ? 'Verifying...' : 'Submit Attendance'}
+      </button>
+    </form>
+  );
+};
+
+export default ScanAttendance;
+</file>
+
+<file path="src/pages/teacher/Dashboard.jsx">
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Play, Settings as SettingsIcon, Loader, AlertCircle } from 'lucide-react';
+import { useTeacherAuth } from '../../context/TeacherAuthContext';
+import { getTeacherSettings, createAttendanceSession } from '../../services/dbService';
+
+const Dashboard = () => {
+  const { user } = useTeacherAuth();
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [settings, setSettings] = useState(null);
+
+  useEffect(() => {
+    const loadSettings = async () => {
+      if (!user) return;
+      try {
+        const data = await getTeacherSettings(user.uid);
+        if (data) setSettings(data);
+      } catch (err) {
+        console.error("Failed to load settings:", err);
+      }
+    };
+    loadSettings();
+  }, [user]);
+
+  const handleStartSession = async () => {
+    setLoading(true);
+    setError('');
+
+    try {
+      const subject = settings?.subject || "General Class";
+      // INCREASED DEFAULT RADIUS TO 500m TO FIX LAPTOP VS PHONE GPS TESTING
+      const radius = settings?.radius || 500; 
+      const sessionMinutes = settings?.duration || 10;
+      const challengeQuestion = settings?.question || "What was discussed in class today?";
+      const correctAnswer = settings?.correctAnswer || "a";
+      const options = settings?.options || { a: "Option A", b: "Option B", c: "Option C", d: "Option D" };
+
+      let latitude = settings?.latitude || 16.5062;
+      let longitude = settings?.longitude || 80.6480;
+
+      if (navigator.geolocation) {
+        try {
+          const pos = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject, {
+              enableHighAccuracy: true,
+              timeout: 4000,
+              maximumAge: 0
+            });
+          });
+          latitude = pos.coords.latitude;
+          longitude = pos.coords.longitude;
+        } catch (geoErr) {
+          console.warn("Using default/saved coordinates due to timeout.");
+        }
+      }
+
+      const expiresAtMs = Date.now() + (sessionMinutes * 60 * 1000);
+      const expiresAt = new Date(expiresAtMs);
+
+      const sessionData = {
+        teacherId: user.uid,
+        teacherEmail: user.email,
+        subject,
+        geoConfig: { latitude, longitude, radius: Number(radius) },
+        challengeConfig: { question: challengeQuestion, correctAnswer, options },
+        currentToken: Math.random().toString(36).substring(2, 10),
+        expiresAt
+      };
+
+      const sessionId = await createAttendanceSession(sessionData);
+      navigate('/live', { state: { sessionId } });
+    } catch (err) {
+      setError("Failed to start session: " + err.message);
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827' }}>
+          Welcome back, {user?.displayName || 'Teacher'}!
+        </h1>
+        <p style={{ color: '#6b7280', marginTop: '0.5rem', fontSize: '1.125rem' }}>
+          Ready to take attendance? Start a new secure session below.
+        </p>
+      </div>
+
+      {error && (
+        <div style={{ backgroundColor: '#fee2e2', color: '#dc2626', padding: '1rem', borderRadius: '12px', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <AlertCircle size={20} /><span>{error}</span>
+        </div>
+      )}
+
+      <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '3rem 2rem', textAlign: 'center', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.05)', border: '1px solid #f3f4f6' }}>
+        <div style={{ width: '80px', height: '80px', backgroundColor: '#eff6ff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem auto' }}>
+          <Play size={36} color="#2563eb" style={{ marginLeft: '4px' }} />
+        </div>
+        <h2 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem' }}>
+          Start Live Attendance
+        </h2>
+        <p style={{ color: '#6b7280', maxWidth: '500px', margin: '0 auto 2rem auto', lineHeight: '1.5' }}>
+          This will generate a dynamic, rotating QR code. Students must be within range to submit attendance.
+        </p>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+          <button onClick={handleStartSession} disabled={loading} style={{ padding: '1rem 2.5rem', backgroundColor: '#2563eb', color: 'white', borderRadius: '12px', fontWeight: 'bold', fontSize: '1.125rem', display: 'flex', alignItems: 'center', gap: '0.75rem', border: 'none', cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.8 : 1 }}>
+            {loading ? <Loader className="lucide-spin" size={24} /> : <Play size={24} />}
+            {loading ? 'Initiating Session...' : 'Start Session Now'}
+          </button>
+          <button onClick={() => navigate('/settings')} disabled={loading} style={{ padding: '1rem 1.5rem', backgroundColor: '#f3f4f6', color: '#374151', borderRadius: '12px', fontWeight: '600', fontSize: '1.125rem', display: 'flex', alignItems: 'center', gap: '0.5rem', border: 'none', cursor: 'pointer' }}>
+            <SettingsIcon size={20} /> Edit Settings
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;
+</file>
+
+<file path="src/pages/teacher/LiveQR.jsx">
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { QRCodeSVG } from 'qrcode.react';
+import { StopCircle, Users, Loader, ShieldCheck, RefreshCw, Plus, Minus } from 'lucide-react';
+import { db } from '../../services/firebase';
+import { doc, onSnapshot, updateDoc, Timestamp } from 'firebase/firestore';
+import { closeSession, updateSessionToken } from '../../services/dbService';
+import { generateSecureToken, buildQRData } from '../../services/qrService';
+
+const LiveQR = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const sessionId = location.state?.sessionId; 
+
+  const [session, setSession] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [closing, setClosing] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(0); 
+  const [qrTimeLeft, setQrTimeLeft] = useState(15); 
+
+  useEffect(() => {
+    if (!sessionId) {
+      navigate('/');
+      return;
+    }
+
+    const sessionRef = doc(db, 'attendanceSessions', sessionId);
+    
+    const unsubscribe = onSnapshot(sessionRef, (docSnap) => {
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        setSession(data);
+        setLoading(false);
+
+        if (data.expiresAt) {
+          const expiresMs = data.expiresAt.toMillis();
+          const nowMs = Date.now();
+          const remaining = Math.max(0, Math.floor((expiresMs - nowMs) / 1000));
+          setTimeLeft(remaining);
+
+          if (remaining === 0 && data.status === 'OPEN') {
+            handleCloseSession();
+          }
+        }
+      } else {
+        navigate('/'); 
+      }
+    });
+
+    return () => unsubscribe();
+  }, [sessionId, navigate]);
+
+  useEffect(() => {
+    if (session?.status !== 'OPEN') return;
+
+    const rotateQR = async () => {
+      try {
+        const newToken = generateSecureToken();
+        await updateSessionToken(sessionId, newToken);
+      } catch (error) {
+        console.error("Failed to rotate QR token:", error);
+      }
+    };
+
+    const tickInterval = setInterval(() => {
+      setQrTimeLeft((prev) => {
+        if (prev <= 1) {
+          rotateQR(); 
+          return 600; 
+        }
+        return prev - 1; 
+      });
+    }, 1000);
+
+    return () => clearInterval(tickInterval);
+  }, [session?.status, sessionId]); 
+
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const timerInterval = setInterval(() => {
+      setTimeLeft(prev => prev > 0 ? prev - 1 : 0);
+    }, 1000);
+    return () => clearInterval(timerInterval);
+  }, [timeLeft]);
+
+  const adjustTime = async (minutes) => {
+    if (!session || session.status !== 'OPEN') return;
+    try {
+      const sessionRef = doc(db, 'attendanceSessions', sessionId);
+      const currentExpiresMs = session.expiresAt.toMillis();
+      const newExpiresMs = currentExpiresMs + (minutes * 60 * 1000);
+      
+      await updateDoc(sessionRef, {
+        expiresAt: Timestamp.fromMillis(Math.max(Date.now(), newExpiresMs))
+      });
+    } catch (err) {
+      console.error("Failed to adjust time:", err);
+    }
+  };
+
+  const handleCloseSession = async () => {
+    setClosing(true);
+    try {
+      await closeSession(sessionId);
+      navigate('/previous');
+    } catch (error) {
+      console.error("Failed to close session:", error);
+      setClosing(false);
+    }
+  };
+
+  const formatTime = (seconds) => {
+    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const s = (seconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+  };
+
+  if (loading) {
+    return <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4rem' }}><Loader className="lucide-spin" size={40} /></div>;
+  }
+
+  const qrUrl = buildQRData(sessionId, session.currentToken);
+
+  return (
+    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+      
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827' }}>
+          {session.subject}
+        </h1>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '1rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#4b5563', fontSize: '1.125rem' }}>
+            <Users size={24} /> <span style={{ fontWeight: '600' }}>{session.submittedCount || 0}</span> Submitted
+          </div>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: '#dc2626', fontSize: '1.125rem', backgroundColor: '#fee2e2', padding: '0.5rem 1rem', borderRadius: '12px' }}>
+            <span style={{ fontWeight: '700' }}>{formatTime(timeLeft)}</span> Remaining
+            
+            <div style={{ display: 'flex', gap: '0.25rem', marginLeft: '0.5rem' }}>
+              <button onClick={() => adjustTime(-1)} title="Decrease 1 min" style={{ background: '#ef4444', color: 'white', border: 'none', borderRadius: '4px', width: '24px', height: '24px', cursor: 'pointer', fontWeight: 'bold' }}><Minus size={14}/></button>
+              <button onClick={() => adjustTime(1)} title="Increase 1 min" style={{ background: '#16a34a', color: 'white', border: 'none', borderRadius: '4px', width: '24px', height: '24px', cursor: 'pointer', fontWeight: 'bold' }}><Plus size={14}/></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ 
+        backgroundColor: '#ffffff', 
+        padding: '3rem', 
+        borderRadius: '24px', 
+        boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+        display: 'inline-block',
+        border: '4px solid #3b82f6'
+      }}>
+        {timeLeft > 0 && session.status === 'OPEN' ? (
+          <QRCodeSVG 
+            value={qrUrl} 
+            size={350} 
+            level="H" 
+            includeMargin={true}
+          />
+        ) : (
+          <div style={{ padding: '4rem 2rem', color: '#dc2626', fontWeight: 'bold', fontSize: '1.5rem' }}>
+            Session Completed / Expired
+          </div>
+        )}
+        
+        {timeLeft > 0 && session.status === 'OPEN' && (
+          <>
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              gap: '0.5rem', 
+              marginTop: '1.5rem', 
+              color: '#2563eb',
+              fontWeight: '600',
+              fontSize: '1.125rem'
+            }}>
+              <RefreshCw size={20} className={qrTimeLeft <= 3 ? 'lucide-spin' : ''} /> 
+              QR Refreshes in: <span style={{ color: qrTimeLeft <= 3 ? '#dc2626' : '#2563eb' }}>{qrTimeLeft}s</span>
+            </div>
+            
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '0.75rem', color: '#16a34a', fontWeight: '500', fontSize: '0.875rem' }}>
+              <ShieldCheck size={18} /> Anti-Proxy Security Active
+            </div>
+          </>
+        )}
+      </div>
+
+      <div style={{ marginTop: '3rem' }}>
+        <button
+          onClick={handleCloseSession}
+          disabled={closing}
+          style={{
+            padding: '1rem 3rem',
+            backgroundColor: '#ef4444',
+            color: 'white',
+            borderRadius: '8px',
+            fontSize: '1.125rem',
+            fontWeight: 'bold',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '0.75rem',
+            margin: '0 auto',
+            cursor: closing ? 'not-allowed' : 'pointer'
+          }}
+        >
+          {closing ? <Loader className="lucide-spin" size={24} /> : <StopCircle size={24} />}
+          {closing ? 'Closing Session...' : 'Stop Attendance'}
+        </button>
+      </div>
+
+    </div>
+  );
+};
+
+export default LiveQR;
+</file>
+
+<file path="src/pages/teacher/Login.jsx">
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { BookOpen, LogIn } from 'lucide-react';
+import { loginWithGoogle } from '../../services/authService';
+
+const Login = () => {
+  const navigate = useNavigate();
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = async () => {
+    try {
+      setError('');
+      setLoading(true);
+      // Trigger the Google Popup from our auth service
+      await loginWithGoogle();
+      // If successful, redirect them to the dashboard
+      navigate('/');
+    } catch (err) {
+      console.error("Login failed:", err);
+      setError('Failed to sign in. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div style={{
+      display: 'flex',
+      minHeight: '100vh',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#f3f4f6',
+      padding: '1rem'
+    }}>
+      <div style={{
+        backgroundColor: '#ffffff',
+        padding: '3rem 2rem',
+        borderRadius: '12px',
+        boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        textAlign: 'center',
+        maxWidth: '400px',
+        width: '100%'
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
+          <div style={{ backgroundColor: '#eff6ff', padding: '1rem', borderRadius: '50%' }}>
+            <BookOpen size={40} color="#3b82f6" />
+          </div>
+        </div>
+        
+        <h1 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>
+          AttendX
+        </h1>
+        <p style={{ color: '#6b7280', marginBottom: '2rem' }}>
+          AI Smart Attendance Management System
+        </p>
+
+        {error && (
+          <div style={{ backgroundColor: '#fee2e2', color: '#b91c1c', padding: '0.75rem', borderRadius: '6px', marginBottom: '1.5rem', fontSize: '0.875rem' }}>
+            {error}
+          </div>
+        )}
+
+        <button
+          onClick={handleLogin}
+          disabled={loading}
+          style={{
+            width: '100%',
+            padding: '0.75rem 1rem',
+            backgroundColor: '#4285F4', // Official Google Blue
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            fontSize: '1rem',
+            fontWeight: '600',
+            cursor: loading ? 'not-allowed' : 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '0.75rem',
+            transition: 'background-color 0.2s'
+          }}
+        >
+          <LogIn size={20} />
+          {loading ? 'Connecting to Google...' : 'Sign in with Google'}
+        </button>
+
+        <p style={{ marginTop: '2rem', fontSize: '0.75rem', color: '#9ca3af' }}>
+          Teacher portal. Students do not need to log in.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
+</file>
+
+<file path="src/pages/teacher/Previous.jsx">
+import React, { useState, useEffect } from 'react';
+import { Download, Calendar, Clock, Users, Loader, FileSpreadsheet } from 'lucide-react';
+import { useTeacherAuth } from '../../context/TeacherAuthContext';
+import { getTeacherSessions, getSessionRecords } from '../../services/dbService';
+import { downloadCSV } from '../../utils/csv';
+
+const Previous = () => {
+  const { user } = useTeacherAuth();
+  const [sessions, setSessions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [downloadingId, setDownloadingId] = useState(null);
+
+  const fetchSessions = async () => {
+    try {
+      const data = await getTeacherSessions(user.uid);
+      setSessions(data);
+    } catch (error) {
+      console.error("Failed to load previous sessions:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (user) fetchSessions();
+  }, [user]);
+
+  const handleDownload = async (sessionId, subject, createdAt) => {
+    setDownloadingId(sessionId);
+    try {
+      const records = await getSessionRecords(sessionId);
+      if (!records || records.length === 0) {
+        alert("No student submissions found for this session.");
+        setDownloadingId(null);
+        return;
+      }
+      const dateStr = createdAt?.toDate ? createdAt.toDate().toISOString().split('T')[0] : 'SessionDate';
+      const filename = `${subject.replace(/\s+/g, '_')}_${dateStr}.csv`;
+      downloadCSV(records, filename);
+    } catch (error) {
+      console.error("Failed to download CSV:", error);
+      alert("Error generating CSV file.");
+    } finally {
+      setDownloadingId(null);
+    }
+  };
+
+  if (loading) {
+    return <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4rem' }}><Loader className="lucide-spin" size={40} /></div>;
+  }
+
+  return (
+    <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#111827' }}>
+          Attendance History
+        </h1>
+        <p style={{ color: '#6b7280', marginTop: '0.5rem' }}>
+          View past sessions and export attendance data.
+        </p>
+      </div>
+
+      {sessions.length === 0 ? (
+        <div style={{ backgroundColor: '#ffffff', padding: '4rem 2rem', borderRadius: '12px', textAlign: 'center', border: '1px dashed #d1d5db' }}>
+          <FileSpreadsheet size={48} color="#9ca3af" style={{ margin: '0 auto 1rem auto' }} />
+          <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#374151' }}>No sessions found</h3>
+        </div>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {sessions.map((session) => (
+            <div key={session.sessionId} style={{ 
+              backgroundColor: '#ffffff', 
+              padding: '1.5rem', 
+              borderRadius: '12px', 
+              boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1rem',
+              border: '1px solid #e5e7eb'
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div>
+                  <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#111827' }}>{session.subject}</h2>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginTop: '0.5rem', color: '#6b7280', fontSize: '0.875rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
+                      <Calendar size={16} />
+                      {session.createdAt?.toDate ? session.createdAt.toDate().toLocaleDateString() : 'N/A'}
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
+                      <Clock size={16} />
+                      {session.createdAt?.toDate ? session.createdAt.toDate().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'N/A'}
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{ 
+                  backgroundColor: session.status === 'OPEN' ? '#dcfce3' : '#f3f4f6', 
+                  color: session.status === 'OPEN' ? '#166534' : '#4b5563', 
+                  padding: '0.25rem 0.75rem', 
+                  borderRadius: '9999px', 
+                  fontSize: '0.75rem', 
+                  fontWeight: '600' 
+                }}>
+                  {session.status}
+                </div>
+              </div>
+
+              <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#374151', fontWeight: '500' }}>
+                  <Users size={18} /> {session.submittedCount || 0} Students Present
+                </div>
+                
+                <button
+                  onClick={() => handleDownload(session.sessionId, session.subject, session.createdAt)}
+                  disabled={downloadingId === session.sessionId}
+                  style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#111827',
+                    color: 'white',
+                    borderRadius: '6px',
+                    fontSize: '0.875rem',
+                    fontWeight: '500',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    cursor: downloadingId === session.sessionId ? 'not-allowed' : 'pointer'
+                  }}
+                >
+                  {downloadingId === session.sessionId ? <Loader className="lucide-spin" size={16} /> : <Download size={16} />}
+                  Export CSV
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Previous;
+</file>
+
+<file path="src/pages/teacher/Settings.jsx">
+import React, { useState, useEffect } from 'react';
+import { Save, MapPin, Loader } from 'lucide-react';
+import { useTeacherAuth } from '../../context/TeacherAuthContext';
+import { saveTeacherSettings, getTeacherSettings } from '../../services/dbService';
+
+const Settings = () => {
+  const { user } = useTeacherAuth();
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [message, setMessage] = useState({ text: '', type: '' });
+
+  // Default configuration state
+  const [config, setConfig] = useState({
+    subject: '',
+    latitude: '',
+    longitude: '',
+    allowedRadius: '50', // Default 50 meters
+    duration: '5', // Default 5 minutes
+    question: '',
+    options: { a: '', b: '', c: '', d: '' },
+    correctAnswer: 'a'
+  });
+
+  // Fetch existing settings on load
+  useEffect(() => {
+    const loadSettings = async () => {
+      try {
+        const data = await getTeacherSettings(user.uid);
+        if (data) setConfig(data);
+      } catch (error) {
+        console.error("Failed to load settings", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    if (user) loadSettings();
+  }, [user]);
+
+  // Handle standard input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setConfig(prev => ({ ...prev, [name]: value }));
+  };
+
+  // Handle nested option changes (A, B, C, D)
+  const handleOptionChange = (e) => {
+    const { name, value } = e.target;
+    setConfig(prev => ({
+      ...prev,
+      options: { ...prev.options, [name]: value }
+    }));
+  };
+
+  // Auto-fill GPS coordinates using the browser's hardware
+  const handleGetLocation = () => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser.");
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setConfig(prev => ({
+          ...prev,
+          latitude: position.coords.latitude.toString(),
+          longitude: position.coords.longitude.toString()
+        }));
+      },
+      (error) => {
+        alert("Unable to retrieve your location. Please allow location permissions.");
+        console.error(error);
+      },
+      { enableHighAccuracy: true }
+    );
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSaving(true);
+    setMessage({ text: '', type: '' });
+
+    try {
+      await saveTeacherSettings(user.uid, config);
+      setMessage({ text: 'Settings saved successfully!', type: 'success' });
+    } catch (error) {
+      console.error("Failed to save settings", error);
+      setMessage({ text: 'Failed to save settings. Please try again.', type: 'error' });
+    } finally {
+      setSaving(false);
+      // Auto-hide message after 3 seconds
+      setTimeout(() => setMessage({ text: '', type: '' }), 3000);
+    }
+  };
+
+  // Reusable input styling
+  const inputStyle = {
+    width: '100%',
+    padding: '0.75rem',
+    border: '1px solid #d1d5db',
+    borderRadius: '6px',
+    marginTop: '0.25rem',
+    fontSize: '0.875rem'
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '0.875rem',
+    fontWeight: '600',
+    color: '#374151',
+    marginTop: '1rem'
+  };
+
+  if (loading) {
+    return <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}><Loader className="lucide-spin" size={32} /></div>;
+  }
+
+  return (
+    <div style={{ maxWidth: '800px', margin: '0 auto', paddingBottom: '2rem' }}>
+      <h1 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem' }}>
+        Attendance Configurations
+      </h1>
+
+      {message.text && (
+        <div style={{
+          padding: '1rem',
+          borderRadius: '8px',
+          marginBottom: '1.5rem',
+          backgroundColor: message.type === 'success' ? '#dcfce3' : '#fee2e2',
+          color: message.type === 'success' ? '#166534' : '#991b1b'
+        }}>
+          {message.text}
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} style={{ backgroundColor: '#ffffff', padding: '2rem', borderRadius: '12px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+        
+        {/* --- SECTION 1: Basic Info --- */}
+        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', borderBottom: '1px solid #e5e7eb', paddingBottom: '0.5rem', marginBottom: '1rem' }}>
+          General Setup
+        </h2>
+        
+        <label style={labelStyle}>Subject / Class Name</label>
+        <input required type="text" name="subject" value={config.subject} onChange={handleChange} style={inputStyle} placeholder="e.g., Data Structures (CS101)" />
+
+        <label style={labelStyle}>Attendance Window Duration (Minutes)</label>
+        <input required type="number" min="1" max="60" name="duration" value={config.duration} onChange={handleChange} style={inputStyle} />
+
+        {/* --- SECTION 2: Geofencing --- */}
+        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', borderBottom: '1px solid #e5e7eb', paddingBottom: '0.5rem', marginTop: '2rem', marginBottom: '1rem' }}>
+          Geofencing Security (GPS)
+        </h2>
+        
+        <div style={{ display: 'flex', gap: '1rem' }}>
+          <div style={{ flex: 1 }}>
+            <label style={labelStyle}>Latitude</label>
+            <input required type="number" step="any" name="latitude" value={config.latitude} onChange={handleChange} style={inputStyle} />
+          </div>
+          <div style={{ flex: 1 }}>
+            <label style={labelStyle}>Longitude</label>
+            <input required type="number" step="any" name="longitude" value={config.longitude} onChange={handleChange} style={inputStyle} />
+          </div>
+        </div>
+
+        <button type="button" onClick={handleGetLocation} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem', color: '#2563eb', fontSize: '0.875rem', fontWeight: '500' }}>
+          <MapPin size={18} /> Fetch my current location
+        </button>
+
+        <label style={labelStyle}>Allowed Radius (Meters)</label>
+        <input required type="number" min="10" max="1000" name="allowedRadius" value={config.allowedRadius} onChange={handleChange} style={inputStyle} placeholder="50" />
+        <p style={{ fontSize: '0.75rem', color: '#6b7280', marginTop: '0.25rem' }}>Students must be within this distance to mark attendance.</p>
+
+        {/* --- SECTION 3: Cognitive Security (MCQ) --- */}
+        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', borderBottom: '1px solid #e5e7eb', paddingBottom: '0.5rem', marginTop: '2rem', marginBottom: '1rem' }}>
+          Active Challenge (MCQ)
+        </h2>
+        <p style={{ fontSize: '0.875rem', color: '#4b5563', marginBottom: '1rem' }}>Ask a dynamic question on the projector to prevent students from sending the QR code to friends at home.</p>
+        
+        <label style={labelStyle}>Question</label>
+        <input required type="text" name="question" value={config.question} onChange={handleChange} style={inputStyle} placeholder="e.g., What is the output of 2 + 2 in Javascript?" />
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+          <div><label style={labelStyle}>Option A</label><input required type="text" name="a" value={config.options.a} onChange={handleOptionChange} style={inputStyle} /></div>
+          <div><label style={labelStyle}>Option B</label><input required type="text" name="b" value={config.options.b} onChange={handleOptionChange} style={inputStyle} /></div>
+          <div><label style={labelStyle}>Option C</label><input required type="text" name="c" value={config.options.c} onChange={handleOptionChange} style={inputStyle} /></div>
+          <div><label style={labelStyle}>Option D</label><input required type="text" name="d" value={config.options.d} onChange={handleOptionChange} style={inputStyle} /></div>
+        </div>
+
+        <label style={labelStyle}>Correct Answer</label>
+        <select name="correctAnswer" value={config.correctAnswer} onChange={handleChange} style={{ ...inputStyle, cursor: 'pointer', backgroundColor: '#f9fafb' }}>
+          <option value="a">Option A</option>
+          <option value="b">Option B</option>
+          <option value="c">Option C</option>
+          <option value="d">Option D</option>
+        </select>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={saving}
+          style={{
+            marginTop: '2rem', width: '100%', padding: '0.875rem', backgroundColor: '#111827', color: 'white',
+            borderRadius: '8px', fontSize: '1rem', fontWeight: '600', display: 'flex', justifyContent: 'center',
+            alignItems: 'center', gap: '0.5rem', cursor: saving ? 'not-allowed' : 'pointer'
+          }}
+        >
+          {saving ? <Loader className="lucide-spin" size={20} /> : <Save size={20} />}
+          {saving ? 'Saving Configurations...' : 'Save Settings'}
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default Settings;
+</file>
+
+<file path="src/services/authService.js">
+import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
+import { auth } from './firebase';
+
+// Initialize the Google Auth Provider
+const googleProvider = new GoogleAuthProvider();
+
+// Force the account selection prompt. 
+// This is useful if a teacher has multiple Google accounts (personal vs. university)
+googleProvider.setCustomParameters({
+  prompt: 'select_account'
+});
+
+/**
+ * Triggers the Google Sign-In popup.
+ * @returns {Promise<Object>} The authenticated user object
+ */
+export const loginWithGoogle = async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    return result.user;
+  } catch (error) {
+    console.error("Error during Google Sign-In:", error);
+    throw error;
+  }
+};
+
+/**
+ * Logs out the currently authenticated user.
+ * @returns {Promise<void>}
+ */
+export const logoutUser = async () => {
+  try {
+    await signOut(auth);
+  } catch (error) {
+    console.error("Error during logout:", error);
+    throw error;
+  }
+};
+</file>
+
+<file path="src/services/dbService.js">
+import { db } from './firebase';
+import { collection, doc, getDoc, getDocs, setDoc, addDoc, updateDoc, query, where, orderBy, runTransaction, serverTimestamp } from 'firebase/firestore';
+
+export const saveTeacherSettings = async (teacherId, settings) => {
+  await setDoc(doc(db, 'teachers', teacherId), { ...settings, updatedAt: serverTimestamp() }, { merge: true });
+};
+
+export const getTeacherSettings = async (teacherId) => {
+  const docSnap = await getDoc(doc(db, 'teachers', teacherId));
+  return docSnap.exists() ? docSnap.data() : null;
+};
+
+export const createAttendanceSession = async (sessionData) => {
+  const docRef = await addDoc(collection(db, 'attendanceSessions'), {
+    ...sessionData, submittedCount: 0, status: 'OPEN', createdAt: serverTimestamp()
+  });
+  return docRef.id;
+};
+
+export const getSessionById = async (sessionId) => {
+  const docSnap = await getDoc(doc(db, 'attendanceSessions', sessionId));
+  return docSnap.exists() ? { sessionId: docSnap.id, ...docSnap.data() } : null;
+};
+
+export const getTeacherSessions = async (teacherId) => {
+  const q = query(collection(db, 'attendanceSessions'), where('teacherId', '==', teacherId), orderBy('createdAt', 'desc'));
+  const querySnapshot = await getDocs(q);
+  return querySnapshot.docs.map(doc => ({ sessionId: doc.id, ...doc.data() }));
+};
+
+// 100% Reliable CSV Records Fetcher
+export const getSessionRecords = async (sessionId) => {
+  try {
+    const recordsRef = collection(db, 'attendanceSessions', sessionId, 'records');
+    const querySnapshot = await getDocs(recordsRef);
+    const records = [];
+    querySnapshot.forEach((doc) => records.push({ id: doc.id, ...doc.data() }));
+    return records;
+  } catch (err) {
+    console.error("Error fetching records:", err);
+    return [];
+  }
+};
+
+export const closeSession = async (sessionId) => {
+  await updateDoc(doc(db, 'attendanceSessions', sessionId), { status: 'CLOSED' });
+};
+
+export const updateSessionToken = async (sessionId, newToken) => {
+  await updateDoc(doc(db, 'attendanceSessions', sessionId), { currentToken: newToken, tokenUpdatedAt: serverTimestamp() });
+};
+
+export const submitAttendanceRecordTransaction = async (sessionId, rollNumber, recordData) => {
+  const sessionRef = doc(db, 'attendanceSessions', sessionId);
+  const cleanRollNumber = rollNumber.toUpperCase().trim();
+  const recordRef = doc(db, 'attendanceSessions', sessionId, 'records', cleanRollNumber);
+
+  await runTransaction(db, async (transaction) => {
+    const sessionDoc = await transaction.get(sessionRef);
+    if (!sessionDoc.exists() || sessionDoc.data().status !== 'OPEN') throw new Error("Session closed or invalid.");
+    if ((await transaction.get(recordRef)).exists()) throw new Error("ALREADY_SUBMITTED");
+
+    transaction.set(recordRef, { rollNumber: cleanRollNumber, ...recordData, createdAt: serverTimestamp() });
+    transaction.update(sessionRef, { submittedCount: (sessionDoc.data().submittedCount || 0) + 1 });
+  });
+};
+</file>
+
+<file path="src/services/firebase.js">
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+// Pull configurations securely from Vite's environment variables
+const firebaseConfig = {
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
+};
+
+// Initialize the Firebase Application instance
+const app = initializeApp(firebaseConfig);
+
+// Initialize and export Authentication and Firestore services
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { app, auth, db };
+</file>
+
+<file path="src/services/qrService.js">
+import { nanoid } from 'nanoid';
+
+/**
+ * Generates a secure, random token for the QR rotation.
+ * Uses nanoid for fast, URL-friendly unique, non-predictable strings.
+ * 
+ * @returns {string} Secure rotational token
+ */
+export const generateSecureToken = () => {
+  // Generates a 21-character cryptographic string
+  return nanoid();
+};
+
+/**
+ * Builds the complete URL payload embedded inside the QR code.
+ * Uses window.location.origin to dynamically adapt to local dev vs. production hosting.
+ *
+ * @param {string} sessionId - The current active session ID
+ * @param {string} token - The current valid rotating token
+ * @returns {string} The full absolute URL for the student to scan
+ */
+export const buildQRData = (sessionId, token) => {
+  const baseUrl = window.location.origin;
+  return `${baseUrl}/scan?session=${sessionId}&token=${token}`;
+};
+</file>
+
+<file path="src/utils/csv.js">
+export const downloadCSV = (records, filename = 'attendance.csv') => {
+  if (!records || records.length === 0) {
+    alert("No records available to download.");
+    return;
+  }
+
+  const headers = [
+    'Roll Number',
+    'Student Email',
+    'Status',
+    'Distance (meters)',
+    'Selected Answer',
+    'Time (HH:MM:SS)'
+  ];
+
+  const rows = records.map(record => {
+    let timeStr = 'N/A';
+    try {
+      if (record.createdAt?.toDate) {
+        timeStr = record.createdAt.toDate().toTimeString().split(' ')[0];
+      } else if (record.createdAt) {
+        timeStr = new Date(record.createdAt).toTimeString().split(' ')[0];
+      }
+    } catch (e) {
+      timeStr = new Date().toTimeString().split(' ')[0];
+    }
+
+    return [
+      record.rollNumber || 'N/A',
+      record.studentEmail || 'N/A',
+      record.status || 'VERIFIED',
+      record.location?.distance ? Math.round(record.location.distance) : 'N/A',
+      record.selectedAnswer || 'N/A',
+      `"${timeStr}"`
+    ];
+  });
+
+  const csvContent = [
+    headers.join(','),
+    ...rows.map(row => row.join(','))
+  ].join('\n');
+
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  
+  const link = document.createElement('a');
+  link.setAttribute('href', url);
+  link.setAttribute('download', filename);
+  link.style.visibility = 'hidden';
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+</file>
+
+<file path="src/utils/fingerprint.js">
+/**
+ * Generates a lightweight device fingerprint based on browser environment.
+ * Used as a secondary verification layer to detect if multiple roll numbers 
+ * are being submitted from the exact same physical device.
+ * 
+ * @returns {Object} Telemetry data object
+ */
+export const generateDeviceFingerprint = () => {
+  return {
+    userAgent: navigator.userAgent || 'Unknown',
+    platform: navigator.platform || navigator.userAgentData?.platform || 'Unknown',
+    language: navigator.language || 'Unknown',
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown',
+    screenWidth: window.screen.width || 0,
+    screenHeight: window.screen.height || 0
+  };
+};
+</file>
+
+<file path="src/utils/geo.js">
+/**
+ * Converts degrees to radians for mathematical calculations.
+ * @param {number} value - The degree value
+ * @returns {number} The radian equivalent
+ */
+const toRad = (value) => (value * Math.PI) / 180;
+
+/**
+ * Calculates the exact distance between two geographical points using the Haversine formula.
+ * Used to verify if a student's GPS coordinate is within the teacher's configured radius.
+ * 
+ * @param {number} lat1 - Latitude of point 1 (Teacher anchor)
+ * @param {number} lon1 - Longitude of point 1 (Teacher anchor)
+ * @param {number} lat2 - Latitude of point 2 (Student location)
+ * @param {number} lon2 - Longitude of point 2 (Student location)
+ * @returns {number} The absolute distance in meters
+ */
+export const calculateDistance = (lat1, lon1, lat2, lon2) => {
+  const R = 6371e3; // Earth's volumetric mean radius in meters
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  
+  const a = 
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * 
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  
+  return R * c; // Return distance strictly in meters
+};
+</file>
+
+<file path="src/App.jsx">
+import React from 'react';
+import { Routes, Route, Navigate, Link, useLocation } from 'react-router-dom';
+import { LayoutDashboard, QrCode, History, Settings as SettingsIcon, LogOut, Edit2 } from 'lucide-react';
+import { TeacherAuthProvider, useTeacherAuth } from './context/TeacherAuthContext';
+
+import Dashboard from './pages/teacher/Dashboard';
+import LiveQR from './pages/teacher/LiveQR';
+import Previous from './pages/teacher/Previous';
+import Settings from './pages/teacher/Settings';
+import Login from './pages/teacher/Login';
+import ScanAttendance from './pages/student/ScanAttendance';
+
+const SidebarLayout = ({ children }) => {
+  // Pull in the new update function
+  const { user, logout, updateTeacherName } = useTeacherAuth();
+  const location = useLocation();
+
+  const navItems = [
+    { name: 'Dashboard', path: '/', icon: <LayoutDashboard size={20} /> },
+    { name: 'Live QR', path: '/live', icon: <QrCode size={20} /> },
+    { name: 'History', path: '/previous', icon: <History size={20} /> },
+    { name: 'Settings', path: '/settings', icon: <SettingsIcon size={20} /> },
+  ];
+
+  // Function to handle the gear icon click
+  const handleEditName = async () => {
+    const currentName = user?.displayName || 'Teacher';
+    const newName = window.prompt("Enter your new display name:", currentName);
+    
+    if (newName && newName.trim() !== "" && newName !== currentName) {
+      try {
+        await updateTeacherName(newName.trim());
+      } catch (error) {
+        console.error("Failed to update name:", error);
+        alert("An error occurred while updating your name.");
+      }
+    }
+  };
+
+  return (
+    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+      <aside style={{ width: '260px', backgroundColor: '#ffffff', borderRight: '1px solid #e5e7eb', display: 'flex', flexDirection: 'column', position: 'fixed', height: '100vh' }}>
+        <div style={{ padding: '2rem 1.5rem' }}>
+          <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827' }}>AttendX</h1>
+          <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>Teacher Portal</p>
+        </div>
+        
+        <nav style={{ flex: 1, padding: '0 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          {navItems.map((item) => {
+            const isActive = location.pathname === item.path;
+            return (
+              <Link key={item.name} to={item.path} style={{
+                display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1rem',
+                borderRadius: '8px', textDecoration: 'none', fontWeight: '500',
+                backgroundColor: isActive ? '#eff6ff' : 'transparent',
+                color: isActive ? '#2563eb' : '#4b5563',
+                transition: 'all 0.2s'
+              }}>
+                {item.icon} {item.name}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div style={{ padding: '1.5rem', borderTop: '1px solid #e5e7eb' }}>
+          
+          {/* USER PROFILE SECTION WITH GEAR ICON */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', overflow: 'hidden' }}>
+              <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#bfdbfe', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#1e3a8a', flexShrink: 0 }}>
+                {user?.displayName?.charAt(0) || 'T'}
+              </div>
+              <span style={{ fontSize: '0.875rem', fontWeight: '600', color: '#374151', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {user?.displayName || 'Teacher'}
+              </span>
+            </div>
+            
+            {/* The Edit Gear Icon */}
+            <button 
+              onClick={handleEditName} 
+              title="Edit Name"
+              style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: '#9ca3af', padding: '4px', display: 'flex', alignItems: 'center', borderRadius: '4px', transition: 'background 0.2s' }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#f3f4f6'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+            >
+              <SettingsIcon size={16} />
+            </button>
+          </div>
+
+          <button onClick={logout} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', width: '100%', padding: '0.75rem', backgroundColor: 'transparent', border: 'none', color: '#ef4444', fontWeight: '500', cursor: 'pointer', borderRadius: '8px' }}>
+            <LogOut size={20} /> Logout
+          </button>
+        </div>
+      </aside>
+
+      <main style={{ flex: 1, marginLeft: '260px', padding: '2rem' }}>
+        {children}
+      </main>
+    </div>
+  );
+};
+
+const ProtectedRoute = ({ children }) => {
+  const { user } = useTeacherAuth();
+  if (!user) return <Navigate to="/login" replace />;
+  return <SidebarLayout>{children}</SidebarLayout>;
+};
+
+function App() {
+  return (
+    <TeacherAuthProvider>
+      <Routes>
+        <Route path="/scan" element={<ScanAttendance />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        <Route path="/live" element={<ProtectedRoute><LiveQR /></ProtectedRoute>} />
+        <Route path="/previous" element={<ProtectedRoute><Previous /></ProtectedRoute>} />
+        <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </TeacherAuthProvider>
+  );
+}
+
+export default App;
+</file>
+
+<file path="src/main.jsx">
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+
+// Import our context provider and routing engine
+import { TeacherAuthProvider } from './context/TeacherAuthContext';
+import App from './App';
+
+// Import global styles
+import './assets/styles/main.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <TeacherAuthProvider>
+        <App />
+      </TeacherAuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+</file>
+
+<file path=".firebaserc">
+{
+  "projects": {
+    "default": "attendx-fdeab"
+  }
+}
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+  },
+])
+</file>
+
+<file path="firebase.json">
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attendx</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "attendx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^12.17.0",
+    "lucide-react": "^1.28.0",
+    "nanoid": "^6.0.1",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "vite": "^8.2.0"
+  }
+}
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+</files>
