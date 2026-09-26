@@ -1,5 +1,12 @@
 # 🛡️ AttendX — Anti-Proxy Attendance Verification System
 
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)](https://firebase.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**AttendX** is a secure, real-time attendance management system engineered to eliminate proxy attendance in educational and enterprise environments. By combining **Dynamic QR Code rotation**, **Geofencing validation**, and **Device Fingerprinting**, AttendX ensures that attendance can only be marked by legitimate participants physically present at the designated location.
 **AttendX** is a secure, real-time attendance management system engineered to eliminate proxy attendance in educational and enterprise environments. By combining **Dynamic QR Code rotation**, **Geofencing validation**, and **Device Fingerprinting**, AttendX ensures that attendance can only be marked by legitimate participants physically present at the designated location.
 
 ---
